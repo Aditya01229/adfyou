@@ -519,8 +519,7 @@ p.sub{
         padding: 10px;
     }
 }
-
-@media only screen and (max-width: 721px) {
+@media only screen and (max-width: 680px) {
     html{
         font-size: 70%;
     }
