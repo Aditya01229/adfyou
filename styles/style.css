@@ -176,6 +176,7 @@ section{
     word-spacing: -0.4rem;
     max-height: 65px;
     padding: 0 7px;
+    color: var(--main-color) !important;
 }
 
 .body-info p {
