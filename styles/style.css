@@ -519,8 +519,10 @@ p.sub{
         padding: 10px;
     }
 }
-
 @media only screen and (max-width: 680px) {
+    html{
+        font-size: 70%;
+    }
     .body-info h1{
         font-size: 3.6rem;
         min-width: 300px;
