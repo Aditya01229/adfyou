@@ -48,13 +48,23 @@ section{
 
 .heading {
     color: white;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     margin: 5rem 0;
+    
+}
+
+
+.heading-footer {
+    color: white;
+    font-size: 4srem;
+    text-align: center;
+    margin: 5rem 0;
+    
 }
 
 .heading span {
-    padding: 1px 4px;
+    padding: 20px 4px;
 }
 
 .process {
@@ -69,7 +79,10 @@ section{
 .header {
     position: fixed;
     width: 100%;
-    padding: 2rem 5% 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 2%;
+    padding-right: 5%;
     background: rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: row;
@@ -87,16 +100,17 @@ section{
 }
 
 .navbar a {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     color: var(--text-color);
     margin-left: 2rem;
     font-weight: 500;
     transition: 0.3s ease;
+    
 }
 
 .book-box {
     border: solid 0.2px #ffffff70;
-    padding: 4px 16px;
+    padding: 8px 16px;
     border-radius: 20px;
     font-size: 1.8rem;
     color: var(--text-color);
@@ -107,10 +121,11 @@ section{
 }
 
 .book {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     position: relative;
     bottom: 3px;
     transition: 0.3 ease;
+
 }
 
 .book-center{
@@ -158,18 +173,24 @@ section{
 .body-info h1 {
     display: block;
     min-width: 520px;
-    max-width: 550px;
-    font-size: 5rem;
+    max-width: 750px;
+    font-size: 6rem;
     background: rgb(8, 8, 8);
-    background: linear-gradient(180deg, rgba(8, 8, 8, 1) 70%, rgba(185, 111, 253, 1) 90%);
-    font-weight: 900;
+    background: linear-gradient(180deg, rgba(8, 8, 8, 1) 70%, #b96ffd 90%);
+    font-weight: 800;
+    letter-spacing: -4px;
+    word-spacing: -3px;
+    text-align: center;
+    
 }
 
 .body-info p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 10px 12rem;
     color: #b3b2b2;
     margin: 0 5rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 .body-highlight{
@@ -177,18 +198,21 @@ section{
 }
 
 p.quote{
-    margin-top: 120px;
-    font-size: 1.5rem !important;
+    margin-top: 220px;
+    margin-bottom: 120px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 2.5rem !important;
     font-weight: 900;
     color: var(--main-color) !important;
 }
 .container {
     width: 100%;
-    margin: 0 auto;
+    margin: 10rem auto;
     position: relative;
     margin-bottom: 20px;
+    
 }
-
 .ag-timeline_item {
     margin: 0 0 50px;
     position: relative;
@@ -290,18 +314,23 @@ p.quote{
     box-shadow: 0 0 5px var(--main-color);
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    text-align: left;
+
 }
 
 .timeline-content:hover {
     transform: scale(1.03);
     box-shadow: 0 0 0px var(--main-color);
+
 }
 
 .timeline-content h3 {
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     margin: 0 0 10px;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: -1.8px;
+
 }
 
 .timeline-content p {
@@ -327,15 +356,15 @@ p.quote{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
+    gap: 80px;
     padding: 5px 30px;
 }
 
 .founder p{
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 600;
     color: white;
-    max-width: 500px;
+    max-width: 750px;
     text-align: center;
 }
 
@@ -351,8 +380,8 @@ p.quote{
 }
 
 video{
-    width: 20rem;
-    height: 30rem;
+    width: 30rem;
+    height: 45rem;
     /* border-radius: 10%; */
     border: 2px solid white;
     box-shadow: 0 0 8px white;
@@ -363,7 +392,7 @@ video{
 .wrapper{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap:5rem;
+    gap:20rem;
 }
 .testimonial-item{
     min-height: 450px;
@@ -387,21 +416,27 @@ video:hover{
 }
 .testimonial-item h2{
     margin-top: 20px;
-    font-size: 2.2rem;
+    font-size: 2.7rem;
 }
 .testimonial-item p{
     margin-top: 0.3rem;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     font-style: italic;
     letter-spacing: 1px;
+    font-weight: 100;
+    color: #b2b3b3;
+    letter-spacing: -1px;
+    text-align: center;
 }
 
 p.sub{
     font-style: normal;
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: normal;
     margin-top: 0;
     margin-bottom: 4px;
+    font-size: 1.5rem;
+    color: white;
 }
 
 .schedule{
@@ -411,8 +446,10 @@ p.sub{
 }
 
 .schedule p{
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     padding: 2rem 7rem 4rem 7rem;
+    font-weight: 600;
+   
 }
 
 .questions-container{
@@ -474,7 +511,7 @@ p.sub{
     color: var(--main-color);
 }
 .footer .social a{
-    font-size: 25px;
+    font-size: 40px;
     color: var(--main-color);
     width: 42px;
     height: 42px;
@@ -484,21 +521,23 @@ p.sub{
     border-radius: 50%;
     margin: 0 10px;
     transition: 0.3s ease-in-out;
+   
 }
 
 .footer .social a:hover{
-    transform: scale(1.2)translateY(-10px);
+    transform: scale(1.4)translateY(-10px);
     background-color: var(--main-color);
     color: black;
     box-shadow: 0 0 10px var(--main-color);
 }   
 
 .footer .copyright{
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
     font-size: 1.3rem;
     color: #b2b3b3;
     font-weight: 700;
+    
 }
 
 .footer .reserved{
@@ -615,6 +654,7 @@ p.sub{
 
     .testimonials .wrapper{
         grid-template-columns: repeat(1,1fr);
+        
     }
 
     .testimonial-item{
