@@ -70,7 +70,7 @@
                 scrollY = $window.scrollTop(),
                 lineProgressOffsetTop = $timelineLineProgress.offset().top;
                 var itemTop = $(this).find($timelinePoint).offset().top;
-                if ((itemTop - scrollY) < (lineProgressOffsetTop/2.7)) {
+                if ((itemTop - scrollY) < (lineProgressOffsetTop/3.5)) {
                     $(this).addClass('js-ag-active');
                 } else {
                     $(this).removeClass('js-ag-active');

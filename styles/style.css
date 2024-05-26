@@ -35,6 +35,7 @@ body {
 }
 
 .show{
+    color: #b2b3b3;
     opacity: 1;
     filter: blur(0);
 }
@@ -48,17 +49,24 @@ section{
 
 .heading {
     color: white;
-    font-size: 3rem;
+    font-size: 4.5rem;
     text-align: center;
     margin: 5rem 0;
 }
+.heading-footer {
+    color: white;
+    font-size: 2.1rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
 
 .heading span {
     padding: 1px 4px;
 }
 
 .process {
-    padding: 6rem 15px 0px 15px;
+    padding: 6rem 200px 0px 200px;
     /* background: var(--second-bg-color); */
 }
 
@@ -69,7 +77,7 @@ section{
 .header {
     position: fixed;
     width: 100%;
-    padding: 2rem 5% 2rem;
+    padding: 3rem 5% 2rem 1%;
     background: rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: row;
@@ -87,16 +95,16 @@ section{
 }
 
 .navbar a {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--text-color);
-    margin-left: 2rem;
+    margin-left: 4.2rem;
     font-weight: 500;
     transition: 0.3s ease;
 }
 
 .book-box {
     border: solid 0.2px #ffffff70;
-    padding: 4px 16px;
+    padding: 8px 16px;
     border-radius: 20px;
     font-size: 1.8rem;
     color: var(--text-color);
@@ -107,7 +115,7 @@ section{
 }
 
 .book {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     position: relative;
     bottom: 3px;
     transition: 0.3 ease;
@@ -118,6 +126,7 @@ section{
     justify-content: center;
     align-items: center;
     padding-bottom: 60px;
+    margin-top: 9px;
 }
 
 .logo:hover {
@@ -158,18 +167,28 @@ section{
 .body-info h1 {
     display: block;
     min-width: 520px;
-    max-width: 550px;
-    font-size: 5rem;
+    max-width: 600px;
+    font-size: 5.4rem;
     background: rgb(8, 8, 8);
     background: linear-gradient(180deg, rgba(8, 8, 8, 1) 70%, rgba(185, 111, 253, 1) 90%);
     font-weight: 900;
+    letter-spacing: -0.2rem;
+    word-spacing: -0.4rem;
+    max-height: 65px;
+    padding: 0 7px;
 }
 
 .body-info p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 10px 12rem;
     color: #b3b2b2;
     margin: 0 5rem;
+    font-weight: 700;
+}
+
+#body-text{
+    padding-top: 4rem;
+    height: 40vh;
 }
 
 .body-highlight{
@@ -178,7 +197,7 @@ section{
 
 p.quote{
     margin-top: 120px;
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
     font-weight: 900;
     color: var(--main-color) !important;
 }
@@ -283,7 +302,7 @@ p.quote{
 }
 
 .timeline-content {
-    background-color: #b3b2b215;
+    background-color: #b3b2b235;
     border: solid white 1px;
     padding: 30px 50px;
     /* border-radius: 1rem; */
@@ -298,10 +317,11 @@ p.quote{
 }
 
 .timeline-content h3 {
-    font-size: 20px;
+    font-size: 23px;
     color: white;
-    margin: 0 0 10px;
-    font-weight: 500;
+    margin: 0 0 20px;
+    font-weight: 700;
+    text-align: left;
 }
 
 .timeline-content p {
@@ -309,6 +329,7 @@ p.quote{
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+    text-align: left;
 }
 
 .ag-timeline-card_point-box,
@@ -327,12 +348,12 @@ p.quote{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
+    gap: 10rem;
     padding: 5px 30px;
 }
 
 .founder p{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
     color: white;
     max-width: 500px;
@@ -351,14 +372,30 @@ p.quote{
 }
 
 video{
-    width: 20rem;
-    height: 30rem;
+    width: 25rem;
+    height: 40rem;
     /* border-radius: 10%; */
     border: 2px solid white;
     box-shadow: 0 0 8px white;
     object-fit: cover;
     transition: 0.4s ease-in-out;
+}
 
+img{
+    width: 25rem;
+    height: 40rem;
+    /* border-radius: 10%; */
+    border: 2px solid white;
+    box-shadow: 0 0 8px white;
+    object-fit: fill;
+    transition: 0.4s ease-in-out;
+}
+
+#myVideo{
+    width: 40rem;
+    object-fit: fill;
+    /* border: none; */
+    /* box-shadow: none; */
 }
 .wrapper{
     display: grid;
@@ -373,7 +410,7 @@ video{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
     color: white;
     transition: 0.4s ease-in-out;
@@ -388,31 +425,39 @@ video:hover{
 .testimonial-item h2{
     margin-top: 20px;
     font-size: 2.2rem;
+    font-weight: 900;
 }
 .testimonial-item p{
-    margin-top: 0.3rem;
-    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    font-size: 1.9rem;
+    font-weight: 100;
     font-style: italic;
     letter-spacing: 1px;
+    color: #b3b2b2;
 }
 
 p.sub{
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: normal;
     margin-top: 0;
     margin-bottom: 4px;
+    color: var(--main-color);
 }
 
 .schedule{
     padding: 0px 3rem;
     text-align: center;
     background: linear-gradient(180deg, #000000 20%, #8e44ad 100%);
+    max-width: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .schedule p{
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     padding: 2rem 7rem 4rem 7rem;
+    font-weight: 700;
 }
 
 .questions-container{
@@ -457,6 +502,7 @@ p.sub{
 
 #faq{
     padding-top: 8rem;
+    margin-bottom: 20%;
 }
 
 /* FOOTER */
@@ -466,7 +512,7 @@ p.sub{
     width: 100%;
     padding: 1px 0;
     background-color: #b2b3b309;
-    margin-bottom: 4rem;
+    margin: 0 2px 1rem 2px;
 }
 .footer .social{
     text-align: center;
@@ -494,17 +540,37 @@ p.sub{
 }   
 
 .footer .copyright{
-    margin-top: 10px;
+    margin: 30px 0;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: #b2b3b3;
     font-weight: 700;
 }
+.copyright span{
+    color: var(--main-color);
+}
+
+.foot-div{
+    position: relative;
+}
+
+.foot-div span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.foot-div span a{
+    font-size: 2.5rem;
+}
 
 .footer .reserved{
-    font-size: 1.7rem;
-    margin: 10rem 0 5rem 0;
+    font-size: 1.9rem;
+    margin: 10rem 0 2rem 0;
+    color: #b2b3b3;
+    text-align: center;
 }
+
 
 /* Responsive Code */
 
@@ -518,21 +584,39 @@ p.sub{
     .body-info p{
         padding: 10px;
     }
+    .process {
+        padding: 6rem 15px 0px 10px;
+        /* background: var(--second-bg-color); */
+    }
+}
+@media screen and (max-width: 910px){
+    .founder{
+        gap: 2rem;
+    }
 }
 @media only screen and (max-width: 680px) {
     html{
         font-size: 70%;
     }
     .body-info h1{
-        font-size: 3.6rem;
+        font-size: 3.5rem;
         min-width: 300px;
-        max-width: 400px;
+        max-width: 500px;
+        max-height: 49px;
     }
 
     .body-info p{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         margin: 0;
         padding: 10px;
+    }
+
+    p.quote {
+        font-size: 1.7rem !important;
+    }
+
+    #body-text{
+        height: 50vh;
     }
     
     .ag-timeline_line {
@@ -568,6 +652,10 @@ p.sub{
     .ag-timeline-card_item {
         width: auto;
         margin: -65px 0 0 75px;
+    }
+    .process {
+        padding: 6rem 15px 0px 10px;
+        /* background: var(--second-bg-color); */
     }
 
     #menu-icon {
@@ -623,13 +711,35 @@ p.sub{
 
     .founder{
         flex-direction: column;
+        gap: 4rem;
     }
     .founder p{
+        font-size: 1.5rem;
         max-width: 600px;
         padding: 10px 40px;
     }
     .schedule p{
         padding: 2rem 4rem 4rem 4rem;
+    }
+
+    .foot-div span a{
+        font-size: 1.4rem;
+    }
+    .footer .reserved{
+        font-size: 1.2rem;
+    }
+
+    #myVideo{
+        height: 30rem;
+        width: 30rem;
+    }
+    .schedule p{
+        font-size: 1.7rem;
+        padding: 0 2px;
+    }
+
+    .heading{
+        font-size: 3rem;
     }
 }
 
@@ -639,10 +749,22 @@ p.sub{
     }
     .body-info h1{
         font-size: 3rem;
+        max-height: 41px;
     }
     .body-info p{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         margin: 0;
         padding: 10px;
+    }
+    #body-text{
+        height: 50vh;
+    }
+    .process {
+        padding: 6rem 15px 0px 10px;
+        /* background: var(--second-bg-color); */
+    }
+    #myVideo{
+        height: 25rem;
+        width: 25rem;
     }
 }
